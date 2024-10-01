@@ -9,13 +9,11 @@
 int main() {
     const char *filename = "test.txt";
 
-
     int fd = open(filename, O_RDWR);
     if (fd == -1) {
         perror("Error opening the file");
         exit(EXIT_FAILURE);
     }
-
 
     struct stat file_stat;
     if (fstat(fd, &file_stat) == -1) {
@@ -45,9 +43,7 @@ int main() {
         perror("Error unmapping the file");
     }
 
-
     close(fd);
-
 
     printf("Check the file content using the command: cat %s\n", filename);
 
