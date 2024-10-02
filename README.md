@@ -14,7 +14,7 @@ The mechanism for reversing the file's bytes involves iterating through half of 
  Finally, it prompts the user to verify the modifications by checking the file content with the cat command. This approach leverages memory mapping to enhance performance when working with large files. 
 
 # Exercise 3
-1. Linked list
+## Linked list
 This C program implements a singly linked list and provides various operations to manipulate it. Below is a brief explanation of each function:
 
 * Node Structure : Defines the basic building block of the linked list, containing an integer value and a pointer to the next node, allowing the list to be traversed.
@@ -39,7 +39,7 @@ This C program implements a singly linked list and provides various operations t
 
 * square: A simple utility function that takes an integer and returns its square by multiplying it by itself.
 
-2. Doubly linked list :
+## Doubly linked list :
 This C program implements a Doubly linked list and provides various operations to manipulate it. Below is a brief explanation of each function:
 
 * Node Structure: Defines a doubly linked list node with an integer value and two pointers: next (to the next node) and prev (to the previous node), allowing bidirectional traversal.
@@ -64,7 +64,7 @@ This C program implements a Doubly linked list and provides various operations t
 
 * square: A utility function that returns the square of an integer, used in mapping operations to transform values in the list.
 
-3. Doubly circular linked list
+## Doubly circular linked list
 
 * Node Structure: Defines a node for a circular doubly linked list, which contains an integer value, a pointer to the next node, and a pointer to the prev node. This allows traversal in both directions.
 
