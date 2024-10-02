@@ -1,19 +1,19 @@
-#TP1 - Memory Segmentation and Linked Lists
+# TP1 - Memory Segmentation and Linked Lists
 
-#Exercise 1 :
+# Exercise 1 :
 This C program displays the addresses of the different memory segments used in a process. 
 It begins by defining an initialized global variable and an uninitialized one, then uses printf with the %p format to show their respective addresses. 
 It also displays the address of a string literal and allocates memory on the heap using malloc, printing the address of this allocation. Next, it creates a local variable on the stack and displays its address. 
 The program uses mmap to allocate an anonymous memory segment, showing the address if the allocation is successful. After retrieving the parent process's PID, it creates a child process using fork. In this child process, execlp is used to execute the command pmap -X, which displays the memory map of the parent process. The parent process waits for the child process to finish, and then the program frees the allocated memory and terminates.
 
 
-#Exercise 2
+# Exercise 2
 This C program demonstrates file memory mapping using the mmap function to efficiently manipulate the contents of a file named test.txt. It starts by opening the file and retrieving its size using fstat. The program then maps the entire file into memory, allowing it to access and modify the content directly as a character array. It reverses the bytes in the file by swapping characters from the beginning and end of the mapped memory region. 
 The mechanism for reversing the file's bytes involves iterating through half of the file, symmetrically swapping the bytes from the beginning with those at the end. In each loop iteration, the byte at the start is temporarily stored, then replaced by the byte from the end. The byte at the end is subsequently replaced with the stored value. This process continues until all the bytes from the start and end have been swapped, fully reversing the file's content.
  After making the changes, it unmaps the memory with munmap and closes the file descriptor.
  Finally, it prompts the user to verify the modifications by checking the file content with the cat command. This approach leverages memory mapping to enhance performance when working with large files. 
 
-#Exercise 3
+# Exercise 3
 1. Linked list
 This C program implements a singly linked list and provides various operations to manipulate it. Below is a brief explanation of each function:
 
