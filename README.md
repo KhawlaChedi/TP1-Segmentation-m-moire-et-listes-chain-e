@@ -1,5 +1,4 @@
 # TP1 - Memory Segmentation and Linked Lists
-
 # Exercise 1 :
 This C program displays the addresses of the different memory segments used in a process. 
 It begins by defining an initialized global variable and an uninitialized one, then uses printf with the %p format to show their respective addresses. 
