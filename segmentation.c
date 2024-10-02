@@ -13,9 +13,12 @@ int global_uninitialized;
 int main (){
 
     printf("Memory segment addresses:\n");
-
+    
+    
     printf("Initialized global data (Data) : %p\n", &global_initialized);
     printf("Uninitialized global data (BSS) : %p\n", &global_uninitialized);
+
+
 
     printf("String literal (Str) : %p\n", STRING);
     
